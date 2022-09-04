@@ -1,0 +1,21 @@
+{
+  "name": "app-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\\",
+  "scripts": {
+    "start":"node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srinidevlearn/node-app-learn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srinidevlearn/node-app-learn/issues"
+  },
+  "homepage": "https://github.com/srinidevlearn/node-app-learn#readme"
+}
