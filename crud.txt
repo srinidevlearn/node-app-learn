@@ -1,0 +1,47 @@
+fs ===> CRUD
+-----------------------------------
+
+C -> Create
+R -> Read
+U -> Update
+D -> Delete
+Rename File -> Rename
+
+---------------------------------------
+Create
+
+define source path
+define destination path
+
+Tips:
+1) for later file access use async just drop it
+2) for immediate file access use sync or rely on callback of file
+
+
+fs.writeFile(resolvedFilePath, data, unicode, callback); // replace entirely with new content
+fs.appendFile(resolvedFilePath,writeData + os.EOL,unicode,callback); // just add below the line 
+fs.open(resolvedFilePath, flag, mod, callback);
+fs.rename(resolvedFilePath, renameFile, callback);
+fs.unlink(resolvedFilePath,callback);
+=======================
+flag:
+  - Reading files
+        r    - Open file for reading .
+        r + - Open file for reading and writing .
+        rs - Open file for reading in synchronous mode .
+        rs + - Open file for reading and writing , asking the OS to open it synchronously .
+    - Writing to files
+        W - Open file for writing . The file is created ( if it does not exist ) or truncated ( if it exists ) .
+        wx Like ' w ' but fails if the path exists .
+        W + - Open file for reading and writing .
+        wx + - Like ' w + ' but fails if the path exists .
+      Appending to files
+        a - Open file for appending .
+        ax - Like ' a ' but fails if the path exists .
+        a + - Open file for reading and appending .
+        ax + - Like ' a + ' but fails if the path exists .
+=======================
+
+
+
+
